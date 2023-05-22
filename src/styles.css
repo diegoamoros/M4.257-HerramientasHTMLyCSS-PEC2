@@ -1,0 +1,433 @@
+/*************************
+ELEMENTOS COMUNES
+**************************/
+
+
+/*************************
+Fonts
+**************************/
+@font-face {
+    font-family: "Montserrat";
+    src: url("fonts/Montserrat-VariableFont_wght.ttf") format('truetype');
+      /*Bug Chrome*/
+    font-weight: 1 999;
+
+}
+
+
+
+/*************************
+Main styles
+**************************/
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    height: 100%;
+}
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
+    color: #2A2A2A;
+    line-height: 1.5;
+    height: 100%;
+    background-color: #ffffff;
+
+}
+
+.container {
+    margin-right: auto;
+    margin-left: auto;
+    padding-right: 10px;
+    padding-left: 10px;
+    max-width: 800px;
+}
+
+.sectionTitle h1:before, .sectionTitle h1:after{
+    content: "";
+    flex: 1 1;
+    border-bottom: 2px solid;
+    margin: auto;
+    color:#9dc345;
+  }
+  .sectionTitle h1:before {
+    margin-right: 10px
+  }
+  .sectionTitle h1:after {
+    margin-left: 10px
+  }
+
+
+/*************************
+Header
+**************************/
+header {
+    height: auto;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    background: white;
+    position: sticky; top: 0;
+    box-shadow: 0 4px 6px #cccccc;
+    z-index:1;
+}
+
+.header-logo {
+    width: 150px;
+    height: auto;
+    padding-top: 10px;
+    padding-bottom: 5px;
+}
+
+header .container {
+    text-align: center;
+}
+
+
+@media (min-width: 576px) {
+    header .container {
+        display: flex;
+        justify-content: space-between;
+    }
+}
+
+
+/*****Navbar menu*****/
+nav {
+    color: white;
+    padding-top: 10px;
+}
+
+nav ul li {
+    display: inline-block;
+    font-size: 0.8rem;
+    font-weight: 600;
+    padding: 5px 5px 0 5px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color:#2A2A2A;
+    padding:0 5px 5px 5px;
+}
+
+nav ul li a:hover {
+    color: #9dc345;
+}
+
+nav li.active a {
+    font-weight: 900;
+    /*text-decoration: dashed underline #2A2A2A 1px;
+    text-underline-offset: 8px;*/
+    border-bottom: 1.5px dashed #2A2A2A;
+}
+
+@media (min-width: 576px) {
+    nav ul li {
+        font-size: 0.9rem;
+    }
+}
+
+
+/*************************
+Footer
+**************************/
+footer {
+    height: auto;
+    padding-top: 15px;
+    padding-bottom: 5px;
+    background-color:#2A2A2A;
+    background-color:#9dc345;
+    color: #FFFFFF;
+    line-height: 2.5;
+    font-size: 0.7rem;
+}
+
+footer .container {
+    text-align: center;
+}
+
+footer ul li {
+    display: inline-block;
+    padding: 0px 5px 0 5px;
+}
+
+footer ul li a {
+    text-decoration: none;
+    color:#FFFFFF;
+}
+
+
+.footer ul li a:hover {
+    opacity: 0.3;
+}
+
+
+
+@media (min-width: 576px) {
+    footer .container {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .footerFollow{
+        margin-left: auto;
+        font-weight: 600;
+        padding-right: 10px;
+    }
+    
+    .footer-logo{
+        position:relative;
+        top:2px;
+    }
+    
+}
+
+
+/*************************
+ELEMENTOS ESPECIFICOS
+DE CADA WEB
+**************************/
+
+/*************************
+index.html PORTADA
+**************************/
+
+.frontPageHeader{
+    background-image: url("img/frontPic2.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 550px;
+}
+
+.frontPageHeader p{
+    margin: auto;
+    padding-top: 250px;
+    padding-bottom: 20px;
+    max-width: 500px;
+    text-align: center;
+}
+
+.frontPageHeader p a {
+    font-size: 2.5rem;
+    font-weight: 900;
+    line-height: 1.2;
+    color:#ffffff;
+    text-shadow: 2px 2px #9dc345;
+    text-decoration: none;
+}
+
+
+.frontPageHeader p a:hover{
+    color:#9dc345;
+    text-shadow: none;
+}
+
+.sectionTitle h1{
+    text-transform: uppercase;
+    font-weight: 900;
+    display: flex;
+    margin: auto;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+
+.frontPageLinksSection{
+    padding-bottom: 30px;    
+}
+
+.frontPageLinksSection .container{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    gap: 20px;
+    justify-content: space-between;
+}
+
+.frontPageLinkImages{
+    width: 100%;
+    height: auto;
+}
+
+.frontPageLink h3{
+    text-transform: uppercase;
+    font-weight: 900;
+}
+
+.frontPageLink{
+    text-decoration: none;
+    color:#2A2A2A;
+}
+
+.frontPageLink:hover{
+    color:#9dc345;
+    opacity: 0.85;
+}
+
+
+@media (min-width: 576px) {
+
+    .frontPageLinksSection .container{
+        grid-template-columns: repeat(4,1fr);
+    }
+
+    .frontPageLinksSection h3{
+        font-size: 1.0rem;
+    }
+}
+
+
+/*************************
+presentacion.html PRESENTACION
+**************************/
+
+.presentationArticle1 {
+    margin: auto;
+    padding-bottom: 20px;
+}
+
+
+.videocontainer {
+    position: relative;
+    width: 100%;
+    padding-bottom: 56.25%;
+
+}
+
+.video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+
+.presentationArticle h1{
+    padding-top: 20px;
+}
+
+.presentationArticle a {
+  text-decoration: none;
+}
+
+.presentationArticle a:hover{
+    color:#9dc345;
+}
+
+
+/*************************
+enlaces.html ENLACES
+**************************/
+
+.sectionlinks ol {
+    padding-top: 25px;
+    padding-bottom: 50px;
+    padding-left: 50px;
+
+}
+
+
+.sectionlinks ol li {
+    padding: 0px 5px 0 5px;
+    text-decoration: none;
+    margin: 0 0 1.5rem 0;
+    font-weight: 600;
+}
+
+.sectionlinks ol li a {
+    text-decoration: none;
+    color:#2A2A2A;
+    font-size: 1.1rem;
+}
+
+.sectionlinks ol li a:hover{
+    color:#9dc345;
+}
+
+
+.sectionlinks ol li p {
+    font-weight: 400;
+}
+
+
+/*************************
+quever.html CATEGORIA
+**************************/
+
+.queverContent{
+    padding-bottom: 30px;    
+    padding-top: 20px; 
+}
+
+.queverContent .container{
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 20px;
+    justify-content: space-between;
+}
+
+.queverContent article{
+    width: 100%;
+    background-color: #FFFFFF;
+    color: #2A2A2A;
+    font-size: 0.8rem;
+
+}
+
+.queverContent article h1 a{
+    font-weight: 600;
+    padding-bottom: 5px;
+    color:#9dc345;
+
+}
+
+.queverContent article iframe{
+    border: none;
+    width: 100%;
+}
+
+
+.queverContent article .queverDescription{
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.queverContent article h1 a {
+    text-decoration: none;
+}
+
+.queverContent article a:hover {
+    opacity: 0.5;
+}
+
+
+@media (min-width: 576px) {
+    .queverContent .container{
+        grid-template-columns: repeat(2,1fr);
+    }
+}
+
+
+
+
+/*************************
+detalleMAHE.html DETALLE
+**************************/
+
+
+.MAHEArticle {
+    padding-bottom: 20px;
+}
+
+.MAHEArticle p {
+    margin: 0 0 1.0rem 0;
+}
+
