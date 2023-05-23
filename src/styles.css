@@ -53,7 +53,7 @@ body {
     flex: 1 1;
     border-bottom: 2px solid;
     margin: auto;
-    color:#9dc345;
+    color:rgb(61,153,112);
   }
   .sectionTitle h1:before {
     margin-right: 10px
@@ -116,7 +116,7 @@ nav ul li a {
 }
 
 nav ul li a:hover {
-    color: #9dc345;
+    color:rgb(61,153,112);
 }
 
 nav li.active a {
@@ -141,7 +141,7 @@ footer {
     padding-top: 15px;
     padding-bottom: 5px;
     background-color:#2A2A2A;
-    background-color:#9dc345;
+    background-color:rgb(61,153,112);
     color: #FFFFFF;
     line-height: 2.5;
     font-size: 0.7rem;
@@ -153,7 +153,7 @@ footer .container {
 
 footer ul li {
     display: inline-block;
-    padding: 0px 5px 0 5px;
+    padding: 0px 3px 0 3px;
 }
 
 footer ul li a {
@@ -166,7 +166,9 @@ footer ul li a {
     opacity: 0.3;
 }
 
-
+.footer p a:hover {
+    opacity: 0.3;
+}
 
 @media (min-width: 576px) {
     footer .container {
@@ -177,7 +179,7 @@ footer ul li a {
     .footerFollow{
         margin-left: auto;
         font-weight: 600;
-        padding-right: 10px;
+        padding-right: 7px;
     }
     
     .footer-logo{
@@ -185,6 +187,13 @@ footer ul li a {
         top:2px;
     }
     
+    .footerElche-logo{
+        padding-right: 10px;
+        padding-top: 3px;
+    }
+
+
+
 }
 
 
@@ -219,13 +228,13 @@ index.html PORTADA
     font-weight: 900;
     line-height: 1.2;
     color:#ffffff;
-    text-shadow: 2px 2px #9dc345;
+    text-shadow: 2px 2px rgb(61,153,112);
     text-decoration: none;
 }
 
 
 .frontPageHeader p a:hover{
-    color:#9dc345;
+    color:rgb(61,153,112);
     text-shadow: none;
 }
 
@@ -266,7 +275,7 @@ index.html PORTADA
 }
 
 .frontPageLink:hover{
-    color:#9dc345;
+    color:rgb(61,153,112);
     opacity: 0.85;
 }
 
@@ -320,7 +329,7 @@ presentacion.html PRESENTACION
 }
 
 .presentationArticle a:hover{
-    color:#9dc345;
+    color:rgb(61,153,112);
 }
 
 
@@ -350,7 +359,7 @@ enlaces.html ENLACES
 }
 
 .sectionlinks ol li a:hover{
-    color:#9dc345;
+    color:rgb(61,153,112);
 }
 
 
@@ -386,7 +395,7 @@ quever.html CATEGORIA
 .queverContent article h1 a{
     font-weight: 600;
     padding-bottom: 5px;
-    color:#9dc345;
+    color:rgb(61,153,112);
 
 }
 
