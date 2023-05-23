@@ -9,24 +9,6 @@ Created by potrace 1.15, written by Peter Selinger 2001-2017
 </metadata>
 <g transform="translate(0.000000,1280.000000) scale(0.100000,-0.100000)"
 fill="#3d9970" stroke="none">
-
-<style>
-    path {
-      fill: fill="#3d9970"; opacity: 0;
-      animation: 5.5s opacity infinite;
-    }
-    @keyframes opacity {
-      15% {opacity: 0} 
-      35% {opacity: 1}
-      65% {opacity: 1} 
-      85% {opacity: 0}
-    }
-    #hg2 {animation-delay: 0.5s}
-    #hg3 {animation-delay: 1.0s}
-    #hg4 {animation-delay: 1.5s}
-    #hg5 {animation-delay: 2.0s}
-  </style>
-
 <path d="M5766 12773 c-25 -50 -73 -197 -141 -429 -82 -284 -115 -386 -127
 -399 -17 -16 -2 189 31 430 34 241 40 373 17 343 -7 -10 -29 -25 -50 -33 -24
 -10 -36 -22 -36 -35 0 -10 -5 -22 -10 -25 -22 -14 -101 -197 -263 -614 -13

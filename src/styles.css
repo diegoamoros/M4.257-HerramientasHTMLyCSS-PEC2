@@ -346,9 +346,17 @@ presentacion.html PRESENTACION
     display: inline;
   }
 
+  .palmSVG {
+    animation: fadeIn 5s ease-in;
+  }
 
-  .palm-grid-container img {
-    width: 30px;
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
   }
 
 /*************************
