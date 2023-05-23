@@ -141,7 +141,7 @@ footer {
     padding-top: 15px;
     padding-bottom: 5px;
     background-color:#2A2A2A;
-    background-color:rgb(61,153,112);
+    background-color:rgb(61, 153, 112);
     color: #FFFFFF;
     line-height: 2.5;
     font-size: 0.7rem;
@@ -332,6 +332,24 @@ presentacion.html PRESENTACION
     color:rgb(61,153,112);
 }
 
+.palm-grid-container {
+    padding-top: 20px;
+    text-align: center;
+}
+.palm-grid-container ul {
+    white-space: nowrap;
+
+  }
+  
+  .palm-grid-container ul, li {
+    list-style: none;
+    display: inline;
+  }
+
+
+  .palm-grid-container img {
+    width: 30px;
+  }
 
 /*************************
 enlaces.html ENLACES
