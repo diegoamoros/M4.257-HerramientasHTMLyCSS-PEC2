@@ -414,7 +414,7 @@ quever.html CATEGORIA
     width: 100%;
     background-color: #FFFFFF;
     color: #2A2A2A;
-    font-size: 0.8rem;
+    font-size: 0.9rem;
 
 }
 
@@ -425,11 +425,9 @@ quever.html CATEGORIA
 
 }
 
-.queverContent article iframe{
-    border: none;
+.queverContent article img{
     width: 100%;
 }
-
 
 .queverContent article .queverDescription{
     padding-top: 10px;
@@ -440,8 +438,9 @@ quever.html CATEGORIA
     text-decoration: none;
 }
 
-.queverContent article a:hover {
-    opacity: 0.5;
+.queverContent article:hover {
+    background-color: rgb(247, 255, 251);
+    opacity: 0.8;
 }
 
 
@@ -450,6 +449,8 @@ quever.html CATEGORIA
         grid-template-columns: repeat(2,1fr);
     }
 }
+
+
 
 
 
@@ -467,3 +468,11 @@ detalleMAHE.html DETALLE
     margin: 0 0 1.0rem 0;
 }
 
+.MAHEArticle img {
+    padding: 20px 0 20px 0;
+    width: 100%;
+}
+
+.MAHEArticle iframe {
+    width: 100%;
+}
