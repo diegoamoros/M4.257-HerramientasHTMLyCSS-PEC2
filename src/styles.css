@@ -303,12 +303,8 @@ index.html PORTADA
     .frontPageLinksSection .container{
         grid-template-columns: repeat(4,1fr);
     }
-
     .frontPageLinksSection h3{
         font-size: 1.0rem;
-    }
-    .frontPageHeader img {
-    clip-path: circle(160px at center);
     }
 }
 
