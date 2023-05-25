@@ -207,7 +207,7 @@ index.html PORTADA
 **************************/
 
 .frontPageHeader{
-    background-image: url("img/frontPic2.jpg");
+    background-image: url("img/portada/frontPic2.jpg");
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
@@ -217,8 +217,8 @@ index.html PORTADA
 
 .frontPageHeader p{
     margin: auto;
-    padding-top: 250px;
-    padding-bottom: 20px;
+    padding-top: 150px;
+    padding-bottom: 200px;
     max-width: 500px;
     text-align: center;
 }
@@ -280,6 +280,24 @@ index.html PORTADA
 }
 
 
+.frontPageHeader img {
+    width: 300px;
+    margin: auto;
+    display: flex;
+    animation: 5s circle;
+}
+   
+@keyframes circle {
+    from {
+      -webkit-clip-path: circle(0%);
+      clip-path: circle(0%);
+    }
+    to {
+      -webkit-clip-path: circle(160px);
+      clip-path: circle(160px);
+    }
+  }
+
 @media (min-width: 576px) {
 
     .frontPageLinksSection .container{
@@ -289,7 +307,11 @@ index.html PORTADA
     .frontPageLinksSection h3{
         font-size: 1.0rem;
     }
+    .frontPageHeader img {
+    clip-path: circle(160px at center);
+    }
 }
+
 
 
 /*************************
@@ -476,3 +498,4 @@ detalleMAHE.html DETALLE
 .MAHEArticle iframe {
     width: 100%;
 }
+
