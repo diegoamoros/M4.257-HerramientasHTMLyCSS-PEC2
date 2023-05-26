@@ -264,7 +264,7 @@ index.html PORTADA
     height: auto;
 }
 
-.frontPageLink h3{
+.frontPageLink h2{
     text-transform: uppercase;
     font-weight: 900;
 }
@@ -303,7 +303,7 @@ index.html PORTADA
     .frontPageLinksSection .container{
         grid-template-columns: repeat(4,1fr);
     }
-    .frontPageLinksSection h3{
+    .frontPageLinksSection h2{
         font-size: 1.0rem;
     }
 }
